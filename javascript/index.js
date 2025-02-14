@@ -1,12 +1,12 @@
 function updateTime() {
-    let londonElement = document.querySelector("#london")
-    if (londonElement) {
-        let londonDateElement = londonElement.querySelector(".date")
-        let londonTimeElement = londonElement.querySelector(".time")
-        let londonTime = moment().tz("Europe/London")
+    let HawaiiElement = document.querySelector("#Hawaii")
+    if (HawaiiElement) {
+        let HawaiiDateElement = HawaiiElement.querySelector(".date")
+        let HawaiiTimeElement = HawaiiElement.querySelector(".time")
+        let HawaiiTime = moment().tz("US/Hawaii")
     
-        londonDateElement.innerHTML = moment().format("MMMM Do YYYY")
-        londonTimeElement.innerHTML = `${londonTime.format("h:mm:ss  [<small>]A[</small>]")}` 
+        HawaiiDateElement.innerHTML = moment().format("MMMM Do YYYY")
+        HawaiiTimeElement.innerHTML = `${HawaiiTime.format("h:mm:ss  [<small>]A[</small>]")}` 
     }
 
     let HonoluluElement = document.querySelector("#Honolulu")
@@ -18,6 +18,18 @@ function updateTime() {
         HonoluluDateElement.innerHTML = moment().format("MMMM Do YYYY")
         HonoluluTimeElement.innerHTML = `${HonoluluTime.format("h:mm:ss  [<small>]A[</small>]")}`
     }
+
+    let MaldivesElement = document.querySelector("#Maldives")
+    if (MaldivesElement) {
+        let MaldivesDateElement = MaldivesElement.querySelector(".date")
+        let MaldivesTimeElement = MaldivesElement.querySelector(".time")
+        let MaldivesTime = moment().tz("Indian/Maldives")
+    
+        MaldivesDateElement.innerHTML = moment().format("MMMM Do YYYY")
+        MaldivesTimeElement.innerHTML = `${MaldivesTime.format("h:mm:ss  [<small>]A[</small>]")}`
+    }
+
+    
 }
 
 function updateCity(event) {

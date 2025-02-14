@@ -22,8 +22,8 @@ h1 {
   font-family: 'Orbitron', sans-serif;
   font-size: 3rem;
   text-transform: uppercase;
-  color: var(--primary-color);
-  text-shadow: 0 0 15px var(--primary-color), 0 0 30px var(--glow-color);
+  color: var(--secondary-color);
+  text-shadow: 0 0 15px var(--secondary-color), 0 0 30px var(--glow-color);
 }
 
 .container {
